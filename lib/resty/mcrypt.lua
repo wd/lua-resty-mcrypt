@@ -26,7 +26,7 @@ int mcrypt_module_close(MCRYPT td);
 int mcrypt_enc_get_iv_size(MCRYPT td);
 ]]
 
-local mcrypt = ffi.load('libmcrypt.so.4')
+local mcrypt = ffi.load('mcrypt')
 
 _M.new = function (self, opts)
     local cipher = opts.cipher
